@@ -4448,7 +4448,7 @@
 								//layer_current = layer_P1;
 								//layer_current_cmy = layer_P1_cmy;
 						}
-						if  ($(this).text().substring(0,3)=='Pol'){
+						if  ($(this).text().substring(0,4)=='Pola'){
 							//select_twice = true;
 							//if (polind==0){
 								//$('#subfilter :nth-child(1)').prop('selected', false).change();
@@ -4466,7 +4466,7 @@
 							cind=1;
 							polind = 1;
 							filtered = false;
-						} else if($(this).text().substring(0,3)=='Okr'){
+						} else if($(this).text().substring(0,3)=='Con'){
 							/*setTimeout(function () {
 								map.fitBounds(wojewods[kod.substring(0,2)].getBounds());
 							}, 1000);*/
@@ -4522,7 +4522,7 @@
 							filtered = true;
 							//console.log('woj link clicked ' + filtered);
 							//map.closePopup();
-						} else if ($(this).text().substring(0,3)=='pow'){
+						} else/* if ($(this).text().substring(0,3)=='pow')*/{
 							/*setTimeout(function () {
 								map.fitBounds(pow_ats[kod.substring(0,4)].getBounds());
 							}, 1000);*/
@@ -4566,9 +4566,9 @@
 								adm_clicked = false;//
 								//resetLabels([layer_Powiaty_Simplified_2]);
 							}, 0);
-						}else{
+						}/*else{
 							//layers[kod].openPopup();
-						}
+						}*/
 					});
 				});
 				
